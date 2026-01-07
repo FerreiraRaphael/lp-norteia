@@ -1,52 +1,52 @@
+import GradientBlob from "./GradientBlob";
+
 const WHATSAPP_LINK =
   "https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20Agentes%20de%20IA%20da%20Norteia.";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center pt-20">
-      <div className="max-w-6xl mx-auto px-6 py-20">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <p className="text-sm tracking-widest text-brand-dark/50 mb-6 uppercase">
-              Agentes de IA sob medida
-            </p>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-brand-dark leading-[1.1] mb-8">
-              Sua empresa pode vender, atender e operar melhor.
-            </h1>
-            <p className="text-lg text-brand-dark/70 leading-relaxed mb-10 max-w-lg">
-              Criamos agentes de inteligência artificial que se integram à sua operação
-              para automatizar o que hoje consome tempo e dinheiro.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href={WHATSAPP_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-3 bg-brand-dark text-brand-cream px-8 py-4 text-sm tracking-wide hover:bg-brand-dark/90 transition-colors"
-              >
-                Falar com especialista
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </a>
-            </div>
-          </div>
+    <section className="min-h-screen flex items-center pt-20 relative overflow-hidden">
+      <GradientBlob />
 
-          <div className="hidden lg:block">
-            <div className="relative">
-              <div className="aspect-square bg-brand-dark/5 rounded-full flex items-center justify-center">
-                <div className="text-center p-12">
-                  <div className="text-6xl font-semibold text-brand-dark mb-2">24/7</div>
-                  <div className="text-sm text-brand-dark/60 tracking-wide">atendimento automático</div>
-                </div>
-              </div>
-              <div className="absolute -bottom-4 -left-4 bg-brand-dark text-brand-cream p-6">
-                <div className="text-2xl font-semibold">-70%</div>
-                <div className="text-xs text-brand-cream/70">trabalho manual</div>
-              </div>
-            </div>
+      <div className="max-w-6xl mx-auto px-6 py-20 w-full relative z-10">
+        <div className="max-w-3xl">
+          <p className="text-sm tracking-widest text-brand-dark/60 mb-6 uppercase animate-fade-in-up font-medium">
+            Norteia Agente de IA
+          </p>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-gliker text-brand-dark leading-[1.1] mb-8 animate-fade-in-up animation-delay-100">
+            <strong className="text-brand-pink">Tráfego Pago</strong>, <strong>Agentes de IA</strong> e <strong>Automações</strong>{" "}
+            <span className="block mt-2">para <strong>vender</strong>, <strong>atender</strong> e <strong>escalar</strong> seu negócio</span>
+          </h1>
+          <p className="text-lg text-brand-dark/70 leading-relaxed mb-10 max-w-xl animate-fade-in-up animation-delay-200">
+            O norte que sua empresa precisa para crescer com <strong>tecnologia</strong> e <strong>performance</strong>.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up animation-delay-300">
+            <a
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-3 bg-brand-pink text-white px-8 py-4 rounded-full text-sm font-medium tracking-wide transition-all hover:scale-105 shadow-lg shadow-brand-pink/30 hover:shadow-xl hover:shadow-brand-pink/40 animate-pulse-soft"
+            >
+              Falar com um especialista agora
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+            <a
+              href="#servicos"
+              className="inline-flex items-center justify-center gap-2 text-brand-dark px-8 py-4 rounded-full text-sm tracking-wide border-2 border-brand-dark/20 hover:border-brand-pink hover:text-brand-pink transition-all hover:bg-brand-pink/5"
+            >
+              Conhecer serviços
+            </a>
           </div>
         </div>
+      </div>
+
+      {/* Animated scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <svg className="w-6 h-6 text-brand-dark/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
       </div>
     </section>
   );

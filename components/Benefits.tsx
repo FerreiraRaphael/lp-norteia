@@ -2,46 +2,54 @@ const benefits = [
   {
     title: "Atendimento 24/7",
     description: "Respostas instantâneas a qualquer hora, sem espera.",
+    color: "bg-brand-pink",
   },
   {
     title: "Menos trabalho manual",
     description: "Automatize tarefas repetitivas e libere seu time.",
+    color: "bg-brand-blue",
   },
   {
     title: "Processos consistentes",
     description: "Resultados previsíveis com padrão de qualidade.",
+    color: "bg-brand-purple",
   },
   {
     title: "Escala sem contratar",
     description: "Cresça a operação sem aumentar a equipe.",
+    color: "bg-brand-orange",
   },
 ];
 
 export default function Benefits() {
   return (
-    <section id="beneficios" className="py-24 md:py-32 border-t border-brand-dark/10">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="beneficios" className="py-24 md:py-32 relative overflow-hidden">
+      {/* Gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-brand-blue/20 via-brand-purple/10 to-brand-pink/20 rounded-[3rem] mx-4 md:mx-8" />
+
+      <div className="max-w-6xl mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-3 gap-16">
           <div>
             <div className="flex items-center gap-4 mb-8">
-              <div className="w-12 h-px bg-brand-dark/30" />
+              <div className="w-12 h-1 bg-brand-orange rounded-full" />
               <span className="text-sm tracking-widest text-brand-dark/50 uppercase">Resultados</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-semibold text-brand-dark leading-tight">
-              O que muda na sua operação
+            <h2 className="text-3xl md:text-4xl font-gliker text-brand-dark leading-tight">
+              O que muda na sua operação com <strong className="text-brand-pink">automação</strong>
             </h2>
           </div>
 
           <div className="lg:col-span-2">
-            <div className="grid sm:grid-cols-2 gap-12">
+            <div className="grid sm:grid-cols-2 gap-5">
               {benefits.map((benefit, index) => (
-                <div key={index}>
-                  <div className="w-10 h-10 border border-brand-dark/20 flex items-center justify-center mb-4">
-                    <span className="text-sm font-mono text-brand-dark/40">
-                      {String(index + 1).padStart(2, '0')}
-                    </span>
+                <div
+                  key={index}
+                  className="p-8 rounded-3xl bg-brand-cream/90 backdrop-blur-sm card-float shadow-sm"
+                >
+                  <div className={`w-14 h-14 rounded-2xl ${benefit.color}/20 flex items-center justify-center mb-5`}>
+                    <div className={`w-5 h-5 rounded-full ${benefit.color}`} />
                   </div>
-                  <h3 className="text-xl font-medium text-brand-dark mb-2">
+                  <h3 className="text-xl font-semibold text-brand-dark mb-3">
                     {benefit.title}
                   </h3>
                   <p className="text-brand-dark/60 leading-relaxed">

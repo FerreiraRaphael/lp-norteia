@@ -3,51 +3,63 @@ const steps = [
     number: "01",
     title: "Entendimento",
     description: "Conversamos para mapear suas necessidades, processos e objetivos específicos.",
+    color: "text-brand-pink",
+    bg: "bg-brand-pink/10",
+    hoverBg: "hover:bg-brand-pink/20",
   },
   {
     number: "02",
     title: "Criação",
     description: "Desenvolvemos um agente com a linguagem, tom e regras do seu negócio.",
+    color: "text-brand-blue",
+    bg: "bg-brand-blue/15",
+    hoverBg: "hover:bg-brand-blue/25",
   },
   {
     number: "03",
     title: "Integração",
     description: "Conectamos com WhatsApp, site, CRM ou qualquer sistema que você já usa.",
+    color: "text-brand-purple",
+    bg: "bg-brand-purple/15",
+    hoverBg: "hover:bg-brand-purple/25",
   },
   {
     number: "04",
     title: "Evolução",
     description: "Monitoramos e ajustamos continuamente para melhorar os resultados.",
+    color: "text-brand-orange",
+    bg: "bg-brand-orange/20",
+    hoverBg: "hover:bg-brand-orange/30",
   },
 ];
 
 export default function HowItWorks() {
   return (
-    <section id="como-funciona" className="py-24 md:py-32 border-t border-brand-dark/10">
+    <section id="como-funciona" className="py-24 md:py-32">
       <div className="max-w-6xl mx-auto px-6">
         <div className="max-w-2xl mb-16">
           <div className="flex items-center gap-4 mb-8">
-            <div className="w-12 h-px bg-brand-dark/30" />
+            <div className="w-12 h-1 bg-brand-pink rounded-full" />
             <span className="text-sm tracking-widest text-brand-dark/50 uppercase">Processo</span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-semibold text-brand-dark leading-tight">
-            Do entendimento à operação em 4 etapas
+          <h2 className="text-3xl md:text-4xl font-gliker text-brand-dark leading-tight">
+            Do entendimento à operação em <span className="text-brand-pink">4 etapas</span>
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-brand-dark/10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
           {steps.map((step, index) => (
             <div
               key={index}
-              className="bg-brand-cream p-8 group hover:bg-brand-dark hover:text-brand-cream transition-colors duration-300"
+              className={`group p-8 rounded-3xl ${step.bg} ${step.hoverBg} card-float`}
             >
-              <span className="text-4xl font-semibold text-brand-dark/20 group-hover:text-brand-cream/20 transition-colors block mb-6">
+              <span className={`text-5xl font-gliker ${step.color} opacity-60 group-hover:opacity-100 transition-opacity block mb-6`}>
                 {step.number}
               </span>
-              <h3 className="text-xl font-medium mb-3 group-hover:text-brand-cream transition-colors">
+              <h3 className="text-xl font-semibold mb-3 text-brand-dark">
                 {step.title}
               </h3>
-              <p className="text-sm text-brand-dark/60 group-hover:text-brand-cream/70 transition-colors leading-relaxed">
+              <p className="text-sm text-brand-dark/60 leading-relaxed">
                 {step.description}
               </p>
             </div>
