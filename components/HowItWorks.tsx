@@ -43,7 +43,7 @@ export default function HowItWorks() {
             <span className="text-sm tracking-widest text-brand-dark/50 uppercase">Processo</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-gliker text-brand-dark leading-tight">
-            Do entendimento à operação em <span className="text-brand-pink">4 etapas</span>
+            Do entendimento à operação em <span className="text-brand-purple">4 etapas</span>
           </h2>
         </div>
 

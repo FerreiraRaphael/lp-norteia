@@ -9,7 +9,7 @@ export default function TrafficAI() {
               <span className="text-sm tracking-widest text-brand-dark/50 uppercase">Tráfego + IA</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-gliker text-brand-dark leading-tight mb-6">
-              <strong className="text-brand-pink">Tráfego Pago</strong> traz pessoas.<br />
+              <strong className="text-brand-purple">Tráfego Pago</strong> traz pessoas.<br />
               <span className="text-brand-orange"><strong>IA</strong> faz o trabalho pesado.</span>
             </h2>
             <p className="text-lg text-brand-dark/70 leading-relaxed">

@@ -6,17 +6,17 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <a href="#" className="text-xl font-gliker tracking-tight text-brand-dark">
-            nortei<span className="inline-block border-b-2 border-brand-pink">a</span>
+            nortei<span className="inline-block border-b-2 border-brand-purple">a</span>
           </a>
 
           <nav className="flex flex-wrap justify-center gap-8 text-sm">
-            <a href="#servicos" className="text-brand-dark/60 hover:text-brand-pink transition-colors">
+            <a href="#servicos" className="text-brand-dark/60 hover:text-brand-purple transition-colors">
               Serviços
             </a>
-            <a href="#como-funciona" className="text-brand-dark/60 hover:text-brand-pink transition-colors">
+            <a href="#como-funciona" className="text-brand-dark/60 hover:text-brand-purple transition-colors">
               Processo
             </a>
-            <a href="#beneficios" className="text-brand-dark/60 hover:text-brand-pink transition-colors">
+            <a href="#beneficios" className="text-brand-dark/60 hover:text-brand-purple transition-colors">
               Benefícios
             </a>
           </nav>

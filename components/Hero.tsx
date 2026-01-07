@@ -14,7 +14,7 @@ export default function Hero() {
             Norteia Agente de IA
           </p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-gliker text-brand-dark leading-[1.1] mb-8 animate-fade-in-up animation-delay-100">
-            <strong className="text-brand-pink">Tráfego Pago</strong>, <strong>Agentes de IA</strong> e <strong>Automações</strong>{" "}
+            <strong className="text-brand-purple">Tráfego Pago</strong>, <strong>Agentes de IA</strong> e <strong>Automações</strong>{" "}
             <span className="block mt-2">para <strong>vender</strong>, <strong>atender</strong> e <strong>escalar</strong> seu negócio</span>
           </h1>
           <p className="text-lg text-brand-dark/70 leading-relaxed mb-10 max-w-xl animate-fade-in-up animation-delay-200">
@@ -25,7 +25,7 @@ export default function Hero() {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-3 bg-brand-pink text-white px-8 py-4 rounded-full text-sm font-medium tracking-wide transition-all hover:scale-105 shadow-lg shadow-brand-pink/30 hover:shadow-xl hover:shadow-brand-pink/40 animate-pulse-soft"
+              className="inline-flex items-center justify-center gap-3 bg-brand-purple text-brand-dark px-8 py-4 rounded-full text-sm font-medium tracking-wide transition-all hover:scale-105 shadow-lg shadow-brand-purple/40 hover:shadow-xl hover:shadow-brand-purple/50 animate-pulse-soft"
             >
               Falar com um especialista agora
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -34,7 +34,7 @@ export default function Hero() {
             </a>
             <a
               href="#servicos"
-              className="inline-flex items-center justify-center gap-2 text-brand-dark px-8 py-4 rounded-full text-sm tracking-wide border-2 border-brand-dark/20 hover:border-brand-pink hover:text-brand-pink transition-all hover:bg-brand-pink/5"
+              className="inline-flex items-center justify-center gap-2 text-brand-dark px-8 py-4 rounded-full text-sm tracking-wide border-2 border-brand-dark/20 hover:border-brand-purple hover:text-brand-purple transition-all hover:bg-brand-purple/10"
             >
               Conhecer serviços
             </a>

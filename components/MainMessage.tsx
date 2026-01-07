@@ -13,9 +13,9 @@ export default function MainMessage() {
             <strong> atendimentos</strong> lentos e <strong>leads</strong> que escapam.
           </p>
 
-          <div className="border-l-4 border-brand-pink pl-8 py-6 rounded-r-3xl bg-gradient-to-r from-brand-pink/20 to-transparent">
+          <div className="border-l-4 border-brand-purple pl-8 py-6 rounded-r-3xl bg-gradient-to-r from-brand-purple/20 to-transparent">
             <p className="text-xl md:text-2xl text-brand-dark leading-relaxed">
-              A <strong>Norteia</strong> usa <strong className="text-brand-pink">inteligência artificial</strong> de forma prática — para assumir
+              A <strong>Norteia</strong> usa <strong className="text-brand-purple">inteligência artificial</strong> de forma prática — para assumir
               tarefas do dia a dia e deixar seu time focado no que realmente importa.
             </p>
           </div>

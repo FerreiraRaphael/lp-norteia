@@ -9,7 +9,7 @@ export default function ForWhom() {
               <span className="text-sm tracking-widest text-brand-dark/50 uppercase">Para quem</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-gliker text-brand-dark leading-tight mb-8">
-              A <strong>Norteia</strong> é para empresas que querem <span className="text-brand-pink">resultados</span>, não só tecnologia.
+              A <strong>Norteia</strong> é para empresas que querem <span className="text-brand-purple">resultados</span>, não só tecnologia.
             </h2>
 
             <div className="space-y-3">
