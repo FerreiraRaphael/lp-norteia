@@ -39,19 +39,19 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="servicos" className="py-24 md:py-32 bg-brand-dark text-brand-cream rounded-[3rem] mx-4 md:mx-8">
+    <section id="servicos" className="py-24 md:py-32 bg-brand-cream text-brand-dark rounded-[3rem] mx-4 md:mx-8">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <div className="flex items-center gap-4 mb-8">
-              <div className="w-12 h-1 bg-brand-pink rounded-full" />
-              <span className="text-sm tracking-widest text-brand-cream/50 uppercase">Serviços</span>
+              <div className="w-12 h-1 bg-brand-red rounded-full" />
+              <span className="text-sm tracking-widest text-brand-dark/50 uppercase">Serviços</span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-gliker leading-tight mb-6">
-              <strong className="text-brand-pink">Agentes de IA</strong> para cada área do seu negócio
+              <strong className="text-brand-red">Agentes de IA</strong> para cada área do seu negócio
             </h2>
-            <p className="text-lg text-brand-cream/70 leading-relaxed">
-              Se hoje alguém precisa fazer manualmente, provavelmente a <strong className="text-brand-cream">IA</strong> pode assumir.
+            <p className="text-lg text-brand-dark/70 leading-relaxed">
+              Se hoje alguém precisa fazer manualmente, provavelmente a <strong className="text-brand-dark">IA</strong> pode assumir.
             </p>
           </div>
 
@@ -62,14 +62,14 @@ export default function Services() {
                 className={`group p-6 rounded-3xl ${service.color} ${service.hoverColor} card-float cursor-default`}
               >
                 <div className="flex items-baseline gap-4 mb-3">
-                  <span className="text-sm text-brand-cream/40 font-mono">
+                  <span className="text-sm text-brand-dark/40 font-mono">
                     {String(index + 1).padStart(2, '0')}
                   </span>
-                  <h3 className="text-lg font-semibold text-brand-cream">
+                  <h3 className="text-lg font-semibold text-brand-dark">
                     {service.title}
                   </h3>
                 </div>
-                <p className="text-brand-cream/60 text-sm leading-relaxed pl-10">
+                <p className="text-brand-dark/60 text-sm leading-relaxed pl-10">
                   {service.description}
                 </p>
               </div>

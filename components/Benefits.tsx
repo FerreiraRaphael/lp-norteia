@@ -25,17 +25,17 @@ export default function Benefits() {
   return (
     <section id="beneficios" className="py-24 md:py-32 relative overflow-hidden">
       {/* Gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-brand-blue/20 via-brand-purple/10 to-brand-pink/20 rounded-[3rem] mx-4 md:mx-8" />
+      <div className="absolute inset-0 bg-gradient-to-br from-brand-red/10 via-brand-dark to-brand-red/5 rounded-[3rem] mx-4 md:mx-8" />
 
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-3 gap-16">
           <div>
             <div className="flex items-center gap-4 mb-8">
               <div className="w-12 h-1 bg-brand-orange rounded-full" />
-              <span className="text-sm tracking-widest text-brand-dark/50 uppercase">Resultados</span>
+              <span className="text-sm tracking-widest text-brand-cream/50 uppercase">Resultados</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-gliker text-brand-dark leading-tight">
-              O que muda na sua operação com <strong className="text-brand-pink">automação</strong>
+            <h2 className="text-3xl md:text-4xl font-gliker text-brand-cream leading-tight">
+              O que muda na sua operação com <strong className="text-brand-red">automação</strong>
             </h2>
           </div>
 
@@ -44,7 +44,7 @@ export default function Benefits() {
               {benefits.map((benefit, index) => (
                 <div
                   key={index}
-                  className="p-8 rounded-3xl bg-brand-cream/90 backdrop-blur-sm card-float shadow-sm"
+                  className="p-8 rounded-3xl bg-brand-cream/95 backdrop-blur-sm card-float shadow-sm"
                 >
                   <div className={`w-14 h-14 rounded-2xl ${benefit.color}/20 flex items-center justify-center mb-5`}>
                     <div className={`w-5 h-5 rounded-full ${benefit.color}`} />

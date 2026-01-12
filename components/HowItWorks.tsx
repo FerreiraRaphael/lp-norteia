@@ -35,15 +35,15 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="como-funciona" className="py-24 md:py-32">
+    <section id="como-funciona" className="py-24 md:py-32 bg-brand-cream">
       <div className="max-w-6xl mx-auto px-6">
         <div className="max-w-2xl mb-16">
           <div className="flex items-center gap-4 mb-8">
-            <div className="w-12 h-1 bg-brand-pink rounded-full" />
+            <div className="w-12 h-1 bg-brand-red rounded-full" />
             <span className="text-sm tracking-widest text-brand-dark/50 uppercase">Processo</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-gliker text-brand-dark leading-tight">
-            Do entendimento à operação em <span className="text-brand-purple">4 etapas</span>
+            Do entendimento à operação em <span className="text-brand-red">4 etapas</span>
           </h2>
         </div>
 

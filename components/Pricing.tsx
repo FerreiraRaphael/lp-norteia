@@ -1,12 +1,12 @@
 export default function Pricing() {
   return (
-    <section className="py-24 md:py-32">
+    <section className="py-24 md:py-32 bg-brand-cream">
       <div className="max-w-6xl mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <div className="flex items-center justify-center gap-4 mb-8">
-            <div className="w-12 h-1 bg-brand-purple rounded-full" />
+            <div className="w-12 h-1 bg-brand-red rounded-full" />
             <span className="text-sm tracking-widest text-brand-dark/50 uppercase">Modelo</span>
-            <div className="w-12 h-1 bg-brand-purple rounded-full" />
+            <div className="w-12 h-1 bg-brand-red rounded-full" />
           </div>
           <h2 className="text-3xl md:text-4xl font-gliker text-brand-dark leading-tight">
             Como trabalhamos
@@ -45,7 +45,7 @@ export default function Pricing() {
         </div>
 
         <div className="max-w-3xl mx-auto mt-10 text-center">
-          <p className="text-lg text-brand-dark bg-brand-purple/25 px-8 py-5 rounded-full inline-block font-medium">
+          <p className="text-lg text-brand-dark bg-brand-red/20 px-8 py-5 rounded-full inline-block font-medium">
             Você não fica sozinho depois da entrega.
           </p>
         </div>
