@@ -49,25 +49,41 @@ const technologies = [
   },
 ];
 
+function TechItem({ name, logo }: { name: string; logo: React.ReactNode }) {
+  return (
+    <div className="flex items-center gap-2 text-brand-cream/40 px-8">
+      {logo}
+      <span className="text-lg font-medium tracking-wide whitespace-nowrap">
+        {name}
+      </span>
+    </div>
+  );
+}
+
 export default function TechStack() {
   return (
-    <section className="py-16 border-t border-brand-cream/10">
+    <section className="py-16 border-t border-brand-cream/10 overflow-hidden">
       <div className="max-w-6xl mx-auto px-6">
         <p className="text-center text-brand-cream/60 mb-12">
           Tecnologias que usamos para gerar <strong className="text-brand-cream">crescimento com IA</strong>.
         </p>
+      </div>
 
-        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-16">
+      {/* Carousel container */}
+      <div className="relative">
+        {/* Fade edges */}
+        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-brand-dark to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-brand-dark to-transparent z-10 pointer-events-none" />
+
+        {/* Scrolling track */}
+        <div className="flex animate-scroll-left hover:pause">
+          {/* First set */}
           {technologies.map((tech, index) => (
-            <div
-              key={index}
-              className="flex items-center gap-2 text-brand-cream/40 hover:text-brand-cream/70 transition-colors"
-            >
-              {tech.logo}
-              <span className="text-lg font-medium tracking-wide">
-                {tech.name}
-              </span>
-            </div>
+            <TechItem key={`first-${index}`} name={tech.name} logo={tech.logo} />
+          ))}
+          {/* Duplicate set for seamless loop */}
+          {technologies.map((tech, index) => (
+            <TechItem key={`second-${index}`} name={tech.name} logo={tech.logo} />
           ))}
         </div>
       </div>
