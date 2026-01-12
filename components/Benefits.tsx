@@ -2,22 +2,22 @@ const benefits = [
   {
     title: "Atendimento 24/7",
     description: "Respostas instantâneas a qualquer hora, sem espera.",
-    color: "bg-brand-pink",
+    color: "bg-brand-red",
   },
   {
     title: "Menos trabalho manual",
     description: "Automatize tarefas repetitivas e libere seu time.",
-    color: "bg-brand-blue",
+    color: "bg-brand-dark",
   },
   {
     title: "Processos consistentes",
     description: "Resultados previsíveis com padrão de qualidade.",
-    color: "bg-brand-purple",
+    color: "bg-brand-dark",
   },
   {
     title: "Escala sem contratar",
     description: "Cresça a operação sem aumentar a equipe.",
-    color: "bg-brand-orange",
+    color: "bg-brand-red",
   },
 ];
 
@@ -31,7 +31,7 @@ export default function Benefits() {
         <div className="grid lg:grid-cols-3 gap-16">
           <div>
             <div className="flex items-center gap-4 mb-8">
-              <div className="w-12 h-1 bg-brand-orange rounded-full" />
+              <div className="w-12 h-1 bg-brand-red rounded-full" />
               <span className="text-sm tracking-widest text-brand-cream/50 uppercase">Resultados</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-gliker text-brand-cream leading-tight">

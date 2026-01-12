@@ -5,7 +5,7 @@ export default function ForWhom() {
         <div className="grid lg:grid-cols-2 gap-16">
           <div>
             <div className="flex items-center gap-4 mb-8">
-              <div className="w-12 h-1 bg-brand-blue rounded-full" />
+              <div className="w-12 h-1 bg-brand-red rounded-full" />
               <span className="text-sm tracking-widest text-brand-cream/50 uppercase">Para quem</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-gliker text-brand-cream leading-tight mb-8">
@@ -14,19 +14,19 @@ export default function ForWhom() {
 
             <div className="space-y-3">
               <div className="flex items-center gap-4 p-5 rounded-2xl bg-brand-cream/10 card-float hover:bg-brand-cream/15">
-                <div className="w-3 h-3 bg-brand-pink rounded-full flex-shrink-0" />
+                <div className="w-3 h-3 bg-brand-red rounded-full flex-shrink-0" />
                 <span className="text-brand-cream">Empresas de qualquer tamanho</span>
               </div>
               <div className="flex items-center gap-4 p-5 rounded-2xl bg-brand-cream/10 card-float hover:bg-brand-cream/15">
-                <div className="w-3 h-3 bg-brand-blue rounded-full flex-shrink-0" />
+                <div className="w-3 h-3 bg-brand-cream rounded-full flex-shrink-0" />
                 <span className="text-brand-cream">Negócios que querem <strong>automatizar</strong> tarefas</span>
               </div>
               <div className="flex items-center gap-4 p-5 rounded-2xl bg-brand-cream/10 card-float hover:bg-brand-cream/15">
-                <div className="w-3 h-3 bg-brand-purple rounded-full flex-shrink-0" />
+                <div className="w-3 h-3 bg-brand-red rounded-full flex-shrink-0" />
                 <span className="text-brand-cream">Times pequenos ou sobrecarregados</span>
               </div>
               <div className="flex items-center gap-4 p-5 rounded-2xl bg-brand-cream/10 card-float hover:bg-brand-cream/15">
-                <div className="w-3 h-3 bg-brand-orange rounded-full flex-shrink-0" />
+                <div className="w-3 h-3 bg-brand-cream rounded-full flex-shrink-0" />
                 <span className="text-brand-cream">Quem busca clareza e <strong>eficiência</strong></span>
               </div>
             </div>
