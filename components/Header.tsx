@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 const WHATSAPP_LINK =
-  "https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20Agentes%20de%20IA%20da%20Norteia.";
+  "https://wa.me/5562981836490?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20Agentes%20de%20IA%20da%20Norteia.";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
