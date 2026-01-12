@@ -9,15 +9,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Paleta Norteia - identidade visual
+        // Paleta Norteia - identidade visual V2
         brand: {
-          dark: "#1A1A1A",
-          cream: "#FAF7F2",
+          dark: "#242222",
+          cream: "#faf3da",
           warmgray: "#E8E4DF",
           purple: "#cba8af",
           blue: "#c0d8d9",
           orange: "#edab76",
           pink: "#fa888e",
+          red: "#C24D3D", // vermelho/alaranjado de destaque
         },
       },
       fontFamily: {

@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import MainMessage from "@/components/MainMessage";
+import TechStack from "@/components/TechStack";
 import Services from "@/components/Services";
 import TrafficAI from "@/components/TrafficAI";
 import HowItWorks from "@/components/HowItWorks";
@@ -18,6 +19,7 @@ export default function Home() {
       <main>
         <Hero />
         <MainMessage />
+        <TechStack />
         <Services />
         <TrafficAI />
         <HowItWorks />

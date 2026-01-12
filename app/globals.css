@@ -19,8 +19,8 @@ html {
 
 body {
   font-family: 'Inter', system-ui, sans-serif;
-  background-color: #FAF7F2;
-  color: #1A1A1A;
+  background-color: #242222;
+  color: #faf3da;
 }
 
 @layer utilities {
@@ -30,8 +30,8 @@ body {
 }
 
 ::selection {
-  background-color: #1A1A1A;
-  color: #FAF7F2;
+  background-color: #faf3da;
+  color: #242222;
 }
 
 /* Animations */
@@ -134,4 +134,22 @@ body {
 
 .animation-delay-4000 {
   animation-delay: 4s;
+}
+
+/* Infinite scroll carousel */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 25s linear infinite;
+}
+
+.animate-scroll-left:hover {
+  animation-play-state: paused;
 }

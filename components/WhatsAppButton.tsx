@@ -1,7 +1,7 @@
 "use client";
 
 const WHATSAPP_LINK =
-  "https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20Agentes%20de%20IA%20da%20Norteia.";
+  "https://wa.me/5562981836490?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20Agentes%20de%20IA%20da%20Norteia.";
 
 export default function WhatsAppButton() {
   return (
@@ -9,7 +9,7 @@ export default function WhatsAppButton() {
       href={WHATSAPP_LINK}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-8 right-8 z-50 bg-brand-purple text-brand-dark w-14 h-14 flex items-center justify-center rounded-full shadow-lg shadow-brand-purple/40 transition-all hover:scale-110 hover:shadow-xl hover:shadow-brand-purple/50 animate-pulse-soft"
+      className="fixed bottom-8 right-8 z-50 bg-brand-cream text-brand-dark w-14 h-14 flex items-center justify-center rounded-full shadow-lg shadow-brand-cream/40 transition-all hover:scale-110 hover:shadow-xl hover:shadow-brand-cream/50"
       aria-label="Falar no WhatsApp"
     >
       <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
