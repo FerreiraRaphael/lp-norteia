@@ -4,6 +4,7 @@ type Member = {
   name: string;
   role: string;
   photo?: string;
+  photoPosition?: string;
   initials: string;
   bio: string[];
 };
@@ -13,6 +14,8 @@ type Member = {
 const team: Member[] = [
   {
     name: "Lohrane Eliense",
+    photo: "/team/lohrane.jpg",
+    photoPosition: "center 20%",
     role: "Especialista em Marketing, Gestão de Projetos e Estratégias Comerciais",
     initials: "LE",
     bio: [
@@ -22,6 +25,8 @@ const team: Member[] = [
   },
   {
     name: "Ana Luiza Guimarães",
+    photo: "/team/ana-luiza.jpg",
+    photoPosition: "center 25%",
     role: "Estrategista de Conteúdo, Social Media e Branding",
     initials: "AL",
     bio: [
@@ -40,6 +45,7 @@ function Avatar({ member }: { member: Member }) {
           src={member.photo}
           alt={`Foto de ${member.name}`}
           className="w-full h-full object-cover"
+          style={{ objectPosition: member.photoPosition ?? "center" }}
         />
       ) : (
         <span className="w-full h-full flex items-center justify-center font-gliker text-4xl text-brand-cream">
