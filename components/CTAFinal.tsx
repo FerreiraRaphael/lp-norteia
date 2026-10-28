@@ -1,5 +1,4 @@
-const WHATSAPP_LINK =
-  "https://wa.me/5562981836490?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20Agentes%20de%20IA%20da%20Norteia.";
+import CTAButton from "./CTAButton";
 
 export default function CTAFinal() {
   return (
@@ -13,20 +12,12 @@ export default function CTAFinal() {
             Quer entender onde a <span className="text-brand-red">IA</span> pode ajudar sua empresa?
           </h2>
           <p className="text-lg text-brand-cream/70 mb-12 max-w-xl mx-auto">
-            Converse com um especialista da <strong>Norteia</strong> e descubra quais processos
+            Converse com um especialista da <strong>NorteIA</strong> e descubra quais processos
             podem ser <strong>automatizados</strong>.
           </p>
-          <a
-            href={WHATSAPP_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-brand-red text-brand-cream px-10 py-5 rounded-full text-sm font-medium tracking-wide transition-all hover:scale-105 shadow-lg shadow-brand-red/40 hover:shadow-xl hover:shadow-brand-red/50 animate-pulse-soft"
-          >
-            Falar com um especialista agora
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </a>
+          <CTAButton size="lg" className="animate-pulse-soft">
+            Falar com especialista
+          </CTAButton>
         </div>
       </div>
     </section>

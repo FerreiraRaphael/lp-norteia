@@ -2,23 +2,24 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Norteia Agente | Agentes de IA para sua empresa",
+  title: "NorteIA | Marketing integrado para gerar vendas",
   description:
-    "A Norteia cria Agentes de IA sob medida para automatizar vendas, marketing, atendimento e processos internos. Menos trabalho manual, mais eficiência, resultados claros.",
+    "A NorteIA integra marketing, tecnologia e estratégia comercial: social media, tráfego pago, acompanhamento comercial e agentes de IA para fortalecer sua presença digital e impulsionar o crescimento da sua empresa.",
   keywords: [
-    "agentes de IA",
-    "inteligência artificial",
-    "automação",
+    "marketing integrado",
+    "social media",
+    "tráfego pago",
+    "estratégia comercial",
+    "agente de IA",
     "atendimento automático",
+    "geração de leads",
     "vendas",
-    "marketing",
-    "chatbot",
-    "IA para empresas",
+    "marketing digital",
   ],
   openGraph: {
-    title: "Norteia Agente | Agentes de IA para sua empresa",
+    title: "NorteIA | Marketing integrado para gerar vendas",
     description:
-      "Agentes de IA sob medida para automatizar vendas, marketing, atendimento e processos internos.",
+      "Muito além de entregar leads: marketing, tecnologia e estratégia comercial para impulsionar o crescimento da sua empresa.",
     type: "website",
     locale: "pt_BR",
   },

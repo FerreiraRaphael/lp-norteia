@@ -1,14 +1,13 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import MainMessage from "@/components/MainMessage";
-import TechStack from "@/components/TechStack";
+import Comparison from "@/components/Comparison";
 import Services from "@/components/Services";
+import CommercialFollowUp from "@/components/CommercialFollowUp";
 import TrafficAI from "@/components/TrafficAI";
-import HowItWorks from "@/components/HowItWorks";
-import Benefits from "@/components/Benefits";
-import Pricing from "@/components/Pricing";
-import ForWhom from "@/components/ForWhom";
+import TechStack from "@/components/TechStack";
+import Team from "@/components/Team";
 import CTAFinal from "@/components/CTAFinal";
+import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
@@ -18,15 +17,14 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <MainMessage />
-        <TechStack />
+        <Comparison />
         <Services />
+        <CommercialFollowUp />
         <TrafficAI />
-        <HowItWorks />
-        <Benefits />
-        <Pricing />
-        <ForWhom />
+        <TechStack />
+        <Team />
         <CTAFinal />
+        <FAQ />
       </main>
       <Footer />
       <WhatsAppButton />

@@ -1,3 +1,5 @@
+import { navItems } from "@/lib/nav";
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -10,19 +12,15 @@ export default function Footer() {
           </a>
 
           <nav className="flex flex-wrap justify-center gap-8 text-sm">
-            <a href="#servicos" className="text-brand-cream/60 hover:text-brand-red transition-colors">
-              Serviços
-            </a>
-            <a href="#como-funciona" className="text-brand-cream/60 hover:text-brand-red transition-colors">
-              Processo
-            </a>
-            <a href="#beneficios" className="text-brand-cream/60 hover:text-brand-red transition-colors">
-              Benefícios
-            </a>
+            {navItems.map((item) => (
+              <a key={item.href} href={item.href} className="text-brand-cream/60 hover:text-brand-red transition-colors">
+                {item.label}
+              </a>
+            ))}
           </nav>
 
           <p className="text-sm text-brand-cream/40">
-            {currentYear} Norteia
+            {currentYear} NorteIA
           </p>
         </div>
       </div>

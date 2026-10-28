@@ -1,41 +1,66 @@
-const services = [
+import CTAButton from "./CTAButton";
+
+type Service = {
+  title: string;
+  description: string;
+  badge?: "bonus" | "plus";
+  color: string;
+  hoverColor: string;
+};
+
+const services: Service[] = [
   {
-    title: "Atendimento",
-    description: "Respostas instantâneas e personalizadas, disponíveis 24 horas.",
+    title: "Social media",
+    description:
+      "Estratégias de conteúdo e posicionamento para fortalecer sua marca, gerar conexão e ampliar sua presença digital.",
+    color: "bg-brand-dark/8",
+    hoverColor: "hover:bg-brand-dark/15",
+  },
+  {
+    title: "Tráfego pago",
+    description:
+      "Campanhas estratégicas para ampliar o alcance da sua marca e atrair leads qualificados.",
     color: "bg-brand-red/15",
     hoverColor: "hover:bg-brand-red/25",
   },
   {
-    title: "Vendas",
-    description: "Qualificação automática de leads e acompanhamento até o fechamento.",
-    color: "bg-brand-dark/8",
-    hoverColor: "hover:bg-brand-dark/15",
-  },
-  {
-    title: "Marketing",
-    description: "Engajamento inteligente com leads vindos de campanhas.",
+    title: "Estratégia comercial",
+    description:
+      "Análises dos atendimentos e direcionamento da equipe comercial para aprimorar processos e aumentar as vendas.",
+    badge: "bonus",
     color: "bg-brand-dark/5",
     hoverColor: "hover:bg-brand-dark/10",
   },
   {
-    title: "Follow-up",
-    description: "Acompanhamento sistemático para não perder nenhuma oportunidade.",
-    color: "bg-brand-red/10",
-    hoverColor: "hover:bg-brand-red/20",
-  },
-  {
-    title: "Onboarding",
-    description: "Automatize a jornada inicial e entrega de propostas.",
-    color: "bg-brand-dark/8",
-    hoverColor: "hover:bg-brand-dark/15",
-  },
-  {
-    title: "Processos",
-    description: "Tarefas repetitivas executadas sem intervenção humana.",
-    color: "bg-brand-red/10",
-    hoverColor: "hover:bg-brand-red/20",
+    title: "Agente de IA personalizado",
+    description:
+      "Integrado aos processos da sua empresa, automatiza o atendimento e transfere as conversas para a equipe humana quando necessário.",
+    badge: "plus",
+    color: "bg-brand-dark text-brand-cream",
+    hoverColor: "hover:bg-brand-dark/90",
   },
 ];
+
+function Badge({ kind }: { kind: "bonus" | "plus" }) {
+  if (kind === "bonus") {
+    return (
+      <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold tracking-widest uppercase px-3 py-1 rounded-full bg-brand-red text-brand-cream shadow-md shadow-brand-red/30">
+        <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20 7h-2.18A3 3 0 0012 4.35 3 3 0 006.18 7H4a2 2 0 00-2 2v2a1 1 0 001 1h1v7a2 2 0 002 2h12a2 2 0 002-2v-7h1a1 1 0 001-1V9a2 2 0 00-2-2zM9 5a1 1 0 011 1v1H9a1 1 0 010-2zm6 0a1 1 0 010 2h-1V6a1 1 0 011-1z" />
+        </svg>
+        Bônus
+      </span>
+    );
+  }
+  return (
+    <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold tracking-widest uppercase px-3 py-1 rounded-full bg-brand-cream text-brand-dark shadow-md shadow-brand-cream/20">
+      <svg className="w-3 h-3 text-brand-red" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4z" />
+      </svg>
+      Plus
+    </span>
+  );
+}
 
 export default function Services() {
   return (
@@ -48,32 +73,43 @@ export default function Services() {
               <span className="text-sm tracking-widest text-brand-dark/50 uppercase">Serviços</span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-gliker leading-tight mb-6">
-              <strong className="text-brand-red">Agentes de IA</strong> para cada área do seu negócio
+              Da <strong className="text-brand-red">atração</strong> do cliente ao{" "}
+              <strong className="text-brand-red">fechamento</strong> da venda
             </h2>
-            <p className="text-lg text-brand-dark/70 leading-relaxed">
-              Se hoje alguém precisa fazer manualmente, provavelmente a <strong className="text-brand-dark">IA</strong> pode assumir.
+            <p className="text-lg text-brand-dark/70 leading-relaxed mb-10">
+              Estruturamos as etapas que transformam <strong className="text-brand-dark">oportunidades</strong> em{" "}
+              <strong className="text-brand-dark">resultados</strong>.
             </p>
+            <CTAButton>Falar com especialista</CTAButton>
           </div>
 
           <div className="grid sm:grid-cols-2 gap-5">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className={`group p-6 rounded-3xl ${service.color} ${service.hoverColor} card-float cursor-default`}
-              >
-                <div className="flex items-baseline gap-4 mb-3">
-                  <span className="text-sm text-brand-dark/40 font-mono">
-                    {String(index + 1).padStart(2, '0')}
-                  </span>
-                  <h3 className="text-lg font-semibold text-brand-dark">
-                    {service.title}
-                  </h3>
+            {services.map((service, index) => {
+              const isDark = service.badge === "plus";
+              return (
+                <div
+                  key={service.title}
+                  className={`group relative p-6 rounded-3xl ${service.color} ${service.hoverColor} card-float cursor-default flex flex-col`}
+                >
+                  {service.badge && (
+                    <div className="absolute -top-3 right-5">
+                      <Badge kind={service.badge} />
+                    </div>
+                  )}
+                  <div className="flex items-baseline gap-4 mb-3">
+                    <span className={`text-sm font-mono ${isDark ? "text-brand-cream/40" : "text-brand-dark/40"}`}>
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className={`text-lg font-semibold ${isDark ? "text-brand-cream" : "text-brand-dark"}`}>
+                      {service.title}
+                    </h3>
+                  </div>
+                  <p className={`text-sm leading-relaxed pl-10 ${isDark ? "text-brand-cream/70" : "text-brand-dark/60"}`}>
+                    {service.description}
+                  </p>
                 </div>
-                <p className="text-brand-dark/60 text-sm leading-relaxed pl-10">
-                  {service.description}
-                </p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>

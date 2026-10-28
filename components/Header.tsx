@@ -2,17 +2,11 @@
 
 import { useState } from "react";
 
-const WHATSAPP_LINK =
-  "https://wa.me/5562981836490?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20Agentes%20de%20IA%20da%20Norteia.";
+import { WHATSAPP_LINK } from "@/lib/constants";
+import { navItems } from "@/lib/nav";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const navItems = [
-    { label: "Serviços", href: "#servicos" },
-    { label: "Processo", href: "#como-funciona" },
-    { label: "Benefícios", href: "#beneficios" },
-  ];
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-brand-dark/90 backdrop-blur-md z-50">
