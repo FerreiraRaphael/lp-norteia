@@ -9,14 +9,14 @@ export default function CTAFinal() {
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-gliker text-brand-cream leading-tight mb-6">
-            Quer entender onde a <span className="text-brand-red">IA</span> pode ajudar sua empresa?
+            Precisa de um <span className="text-brand-red">norte</span> para aumentar as vendas da sua empresa?
           </h2>
           <p className="text-lg text-brand-cream/70 mb-12 max-w-xl mx-auto">
-            Converse com um especialista da <strong>NorteIA</strong> e descubra quais processos
-            podem ser <strong>automatizados</strong>.
+            Converse com uma especialista da <strong>Norteia</strong> e descubra como podemos{" "}
+            <strong>impulsionar o seu faturamento</strong>.
           </p>
           <CTAButton size="lg" className="animate-pulse-soft">
-            Falar com especialista
+            Falar com uma especialista
           </CTAButton>
         </div>
       </div>
