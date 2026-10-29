@@ -38,7 +38,7 @@ const team: Member[] = [
 
 function Avatar({ member }: { member: Member }) {
   return (
-    <div className="relative w-28 h-28 md:w-32 md:h-32 rounded-[2rem] overflow-hidden flex-shrink-0 bg-gradient-to-br from-brand-red to-brand-red/60 shadow-lg shadow-brand-red/30">
+    <div className="relative w-44 h-44 md:w-52 md:h-52 rounded-[2rem] overflow-hidden flex-shrink-0 bg-gradient-to-br from-brand-red to-brand-red/60 shadow-lg shadow-brand-red/30">
       {member.photo ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
@@ -48,7 +48,7 @@ function Avatar({ member }: { member: Member }) {
           style={{ objectPosition: member.photoPosition ?? "center" }}
         />
       ) : (
-        <span className="w-full h-full flex items-center justify-center font-gliker text-4xl text-brand-cream">
+        <span className="w-full h-full flex items-center justify-center font-gliker text-6xl text-brand-cream">
           {member.initials}
         </span>
       )}
